@@ -1,4 +1,16 @@
-# FOSDEM Companion
+# NOWHERE Guide
+
+This is a customization of the Fosdem companion to display the events and workshops at
+the [nowhere](http://www.goingnowhere.org/) festival in Spain. The data source is the
+even guide [website](https://wwwguide.goingnowhere.org/)
+
+
+## Contributors
+* Pietro Abate
+* Andreas C. Osowski
+* David Cushing
+
+-------
 
 Advanced native Android schedule browser application for the [FOSDEM](http://fosdem.org/) conference in Brussels, Belgium.
 
