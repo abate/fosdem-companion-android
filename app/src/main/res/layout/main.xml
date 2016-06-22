@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<be.digitalia.fosdem.widgets.PhotoViewDrawerLayout
+<org.goingnowhere.companion.widgets.PhotoViewDrawerLayout
     android:id="@+id/drawer_layout"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -21,7 +21,7 @@
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
-                style="@style/Toolbar.Fosdem"
+                style="@style/Toolbar.Companion"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"/>
 
@@ -50,4 +50,4 @@
 
     <include layout="@layout/include_navigation_drawer"/>
 
-</be.digitalia.fosdem.widgets.PhotoViewDrawerLayout>
+</org.goingnowhere.companion.widgets.PhotoViewDrawerLayout>

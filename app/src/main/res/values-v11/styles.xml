@@ -4,14 +4,14 @@
     <!-- Main theme -->
 
     <style name="AppTheme" parent="Base.AppTheme">
-        <item name="android:progressBarStyleHorizontal">@style/ProgressBar.Fosdem</item>
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBar.Companion</item>
         <item name="android:fastScrollThumbDrawable">@drawable/fosdem_fastscroll_thumb_holo</item>
         <item name="android:selectableItemBackground">?attr/selectableItemBackground</item>
         <item name="android:listChoiceBackgroundIndicator">?attr/listChoiceBackgroundIndicator
         </item>
     </style>
 
-    <style name="ProgressBar.Fosdem" parent="android:Widget.Holo.ProgressBar.Horizontal">
+    <style name="ProgressBar.Companion" parent="android:Widget.Holo.ProgressBar.Horizontal">
         <item name="android:indeterminateDrawable">
             @drawable/fosdem_progress_indeterminate_horizontal_holo_light
         </item>
