@@ -10,7 +10,7 @@ import java.util.Locale;
  */
 public class FosdemUrls {
 
-	private static final String SCHEDULE_URL = "https://fosdem.org/schedule/xml";
+	private static final String SCHEDULE_URL = "https://beta.frenchburners.org/nowhere-schedule.xml";
 	private static final String EVENT_URL_FORMAT = "https://fosdem.org/%1$d/schedule/event/%2$s/";
 	private static final String PERSON_URL_FORMAT = "https://fosdem.org/%1$d/schedule/speaker/%2$s/";
 
