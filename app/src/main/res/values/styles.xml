@@ -14,9 +14,9 @@
     </style>
 
     <style name="AppTheme" parent="Base.AppTheme">
-        <item name="android:progressBarStyleHorizontal">@style/ProgressBar.Fosdem</item>
-        <item name="android:listViewStyle">@style/ListView.Fosdem</item>
-        <item name="android:scrollViewStyle">@style/ScrollView.Fosdem</item>
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBar.Companion</item>
+        <item name="android:listViewStyle">@style/ListView.Companion</item>
+        <item name="android:scrollViewStyle">@style/ScrollView.Companion</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -34,13 +34,13 @@
         <item name="colorAccent">@color/color_accent</item>
     </style>
 
-    <style name="Toolbar.Fosdem" parent="Widget.AppCompat.Toolbar">
+    <style name="Toolbar.Companion" parent="Widget.AppCompat.Toolbar">
         <item name="android:background">?attr/colorPrimary</item>
         <item name="popupTheme">@style/ThemeOverlay.AppCompat.Light</item>
         <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
     </style>
 
-    <style name="ProgressBar.Fosdem" parent="android:Widget.ProgressBar.Horizontal">
+    <style name="ProgressBar.Companion" parent="android:Widget.ProgressBar.Horizontal">
         <item name="android:indeterminateDrawable">
             @drawable/fosdem_progress_indeterminate_horizontal_holo_light
         </item>
@@ -49,12 +49,12 @@
         <item name="android:maxHeight">16dip</item>
     </style>
 
-    <style name="ListView.Fosdem" parent="android:Widget.ListView.White">
+    <style name="ListView.Companion" parent="android:Widget.ListView.White">
         <item name="android:listSelector">?attr/listChoiceBackgroundIndicator</item>
         <item name="android:fadingEdge">none</item>
     </style>
 
-    <style name="ScrollView.Fosdem" parent="android:Widget.ScrollView">
+    <style name="ScrollView.Companion" parent="android:Widget.ScrollView">
         <!-- Fading edges were enabled by default on older devices and are now deprecated. -->
         <item name="android:fadingEdge">none</item>
     </style>

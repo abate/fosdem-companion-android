@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<be.digitalia.fosdem.widgets.ScrimInsetsFrameLayout
+<org.goingnowhere.companion.widgets.ScrimInsetsFrameLayout
     android:id="@+id/main_menu"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -28,7 +28,7 @@
                 android:scaleType="center"
                 android:src="@drawable/fosdem_title"/>
 
-            <be.digitalia.fosdem.widgets.AdapterLinearLayout
+            <org.goingnowhere.companion.widgets.AdapterLinearLayout
                 android:id="@+id/sections"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
@@ -65,4 +65,4 @@
         android:padding="4dp"
         tools:text="DB last updated: 1 jan. 2015 13:37:00"/>
 
-</be.digitalia.fosdem.widgets.ScrimInsetsFrameLayout>
+</org.goingnowhere.companion.widgets.ScrimInsetsFrameLayout>
