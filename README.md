@@ -8,7 +8,7 @@ even guide [website](https://wwwguide.goingnowhere.org/)
 ## Contributors
 * Pietro Abate
 * Andreas C. Osowski
-* David Cushing
+* David Cushing (nowhere guide website)
 
 -------
 
