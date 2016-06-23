@@ -42,12 +42,16 @@
     <string name="now_empty">During NOWHERE, the events in progress will be shown here.</string>
 
     <!-- Track types -->
+    <string name="arts_and_crafts">Arts and crafts</string>
+    <string name="chillout">Chillout</string>
+    <string name="food_and_drink">Food and drink</string>
     <string name="other">Other</string>
-    <string name="keynote">Keynote</string>
-    <string name="main_track">Main track</string>
-    <string name="developer_room">Developer room</string>
-    <string name="lightning_talk">Lightning talk</string>
-    <string name="certification_exam">Certification Exam</string>
+    <string name="party">Party</string>
+    <string name="performance">Performance</string>
+    <string name="spiritual_healing">Spiritual / Healing</string>
+    <string name="talk_lecture">Talk / Lecture</string>
+    <string name="workshop">Workshop</string>
+    <string name="nowhere">Nowhere</string>
 
     <!-- Search -->
     <string name="search_events">Search events</string>

@@ -9,12 +9,16 @@ import org.goingnowhere.companion.R;
 public class Track implements Parcelable {
 
 	public enum Type {
+		arts_and_crafts(R.string.arts_and_crafts),
+		chillout(R.string.chillout),
+		food_and_drink(R.string.food_and_drink),
 		other(R.string.other),
-		keynote(R.string.keynote),
-		maintrack(R.string.main_track),
-		devroom(R.string.developer_room),
-		lightningtalk(R.string.lightning_talk),
-		certification(R.string.certification_exam);
+		party(R.string.party),
+		performance(R.string.performance),
+		spiritual_healing(R.string.spiritual_healing),
+		talk_lecture(R.string.talk_lecture),
+		workshop(R.string.workshop),
+		nowhere(R.string.nowhere);
 
 		private final int nameResId;
 
