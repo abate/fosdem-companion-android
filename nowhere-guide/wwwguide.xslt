@@ -10,9 +10,11 @@
   <xsl:key name="groups-location" match="/eventList/events" use="location" />
   <xsl:key name="groups-host" match="//events" use="host/text()" />
 
+  <xsl:variable name="uppercase" select="'ABCDEFGHIJKLMNOPQRSTUVWXYZ'" />
+  <xsl:variable name="lowercase" select="'abcdefghijklmnopqrstuvwxyz'" />
 	<xsl:variable name="groups">
-    <xsl:for-each select="//events[generate-id() = generate-id(key('groups-host', host)[1])]">
-      <group num="{position()}" val="{host}"/>
+    <xsl:for-each select="//events[generate-id() = generate-id(key('groups-location', location)[1])]">
+      <group num="{position()}" val="{location}"/>
     </xsl:for-each>
 	</xsl:variable>
 
@@ -61,19 +63,28 @@
         </xsl:call-template>
       </duration>
       <room><xsl:value-of select="location"/></room>
-      <slug>this is a slug</slug>
+      <slug/>
       <title><xsl:value-of select="name"/></title>
-      <subtitle>this is a subtitle</subtitle>
-      <track><xsl:value-of select="location"/></track>
-      <type><xsl:value-of select="category"/></type>
+      <subtitle>
+        Hosted by <xsl:value-of select="host"/>.
+        <xsl:choose>
+          <xsl:when test="adult = 'true'">Adult Activity</xsl:when>
+          <xsl:when test="kids = 'true'">Kids Friendly Activity</xsl:when>
+          <xsl:otherwise/>
+				</xsl:choose> 
+      </subtitle>
+      <track><xsl:value-of select="category"/></track>
+      <type><xsl:value-of
+          select="translate(translate(normalize-space(translate(category,'/',' ')),' ','_'),$uppercase,$lowercase)"/>
+      </type>
       <language/>
       <abstract><xsl:value-of select="info"/></abstract>
       <description>
         <!--<xsl:value-of select="info"/>-->
       </description>
       <persons>
-        <person id="{common:node-set($groups)/group[@val=current()/host]/@num}">
-          <xsl:value-of select="host"/>
+        <person id="{common:node-set($groups)/group[@val=current()/location]/@num}">
+          <xsl:value-of select="location"/>
         </person>
       </persons>
       <!--<links>-->
