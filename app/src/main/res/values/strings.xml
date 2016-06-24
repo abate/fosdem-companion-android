@@ -22,7 +22,7 @@
     <string name="menu_tracks">Activities</string>
     <string name="menu_bookmarks">Bookmarks</string>
     <string name="menu_live">Live</string>
-    <string name="menu_speakers">Hosts</string>
+    <string name="menu_speakers">Barrios</string>
     <string name="menu_map">Map</string>
 
     <!-- Bookmarks -->
@@ -52,11 +52,12 @@
     <string name="talk_lecture">Talk / Lecture</string>
     <string name="workshop">Workshop</string>
     <string name="nowhere">Nowhere</string>
+    <string name="adult">Adult Only / Sex Related</string>
 
     <!-- Search -->
     <string name="search_events">Search events</string>
     <string name="search_settings_description">Events</string>
-    <string name="search_hint">Event, activity, host</string>
+    <string name="search_hint">Event, activity, barrio</string>
     <string name="no_search_result">No result.</string>
 
     <!-- Errors -->
@@ -102,8 +103,8 @@
     <string name="calendar_not_found">No compatible calendar application found.</string>
 
     <plurals name="speakers">
-        <item quantity="one">Host</item>
-        <item quantity="other">Hosts</item>
+        <item quantity="one">Barrio</item>
+        <item quantity="other">Barrios</item>
     </plurals>
 
     <!-- Speaker info -->

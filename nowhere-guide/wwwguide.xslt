@@ -73,9 +73,22 @@
           <xsl:otherwise/>
 				</xsl:choose> 
       </subtitle>
-      <track><xsl:value-of select="category"/></track>
-      <type><xsl:value-of
-          select="translate(translate(normalize-space(translate(category,'/',' ')),' ','_'),$uppercase,$lowercase)"/>
+      <track>
+        <xsl:choose>
+          <xsl:when test="adult = 'true'">Adults Only</xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="category"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </track>
+      <type>
+        <xsl:choose>
+          <xsl:when test="adult = 'true'">adult</xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of
+              select="translate(translate(normalize-space(translate(category,'/',' ')),' ','_'),$uppercase,$lowercase)"/>
+          </xsl:otherwise>
+        </xsl:choose>
       </type>
       <language/>
       <abstract><xsl:value-of select="info"/></abstract>

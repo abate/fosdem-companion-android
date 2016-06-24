@@ -18,6 +18,7 @@ public class Track implements Parcelable {
 		spiritual_healing(R.string.spiritual_healing),
 		talk_lecture(R.string.talk_lecture),
 		workshop(R.string.workshop),
+		adult(R.string.adult),
 		nowhere(R.string.nowhere);
 
 		private final int nameResId;
