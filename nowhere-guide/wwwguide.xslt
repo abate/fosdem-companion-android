@@ -67,9 +67,10 @@
       <title><xsl:value-of select="name"/></title>
       <subtitle>
         Hosted by <xsl:value-of select="host"/>.
+        <xsl:if test="$duration = 86400">(All Day Event)</xsl:if>
         <xsl:choose>
-          <xsl:when test="adult = 'true'">Adult Activity</xsl:when>
-          <xsl:when test="kids = 'true'">Kids Friendly Activity</xsl:when>
+          <xsl:when test="adult = 'true'"> / Adult Activity</xsl:when>
+          <xsl:when test="kids = 'true'"> / Kids Friendly Activity</xsl:when>
           <xsl:otherwise/>
 				</xsl:choose> 
       </subtitle>
@@ -110,6 +111,12 @@
     <xsl:param name="value" select="." />
     <xsl:param name="alwaysIncludeHours" select="true()" />
     <xsl:param name="includeSeconds" select="false()" />
+    <xsl:variable name="value">
+      <xsl:choose>
+        <xsl:when test="$value = 86400">82800</xsl:when>
+        <xsl:otherwise><xsl:value-of select="$value"/></xsl:otherwise>
+      </xsl:choose>
+    </xsl:variable>
 
     <xsl:if test="$value > 3600 or $alwaysIncludeHours">
       <xsl:value-of select="concat(format-number($value div 3600, '00'), ':')"/>
